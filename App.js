@@ -27,7 +27,7 @@ export default function App() {
     <NavigationContainer theme={theme}>
       <Stack.Navigator
         screenOptions={{ headerShown: false }}
-        initialRouteName="Home"
+        initialRouteName="Boarding"
       >
         <Stack.Screen name="Boarding" component={ CustomButtons} />
         <Stack.Screen name="Home" component={Home} />

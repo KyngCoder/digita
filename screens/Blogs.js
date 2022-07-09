@@ -40,6 +40,14 @@ const Item = ({ item }) => {
   return (
     <View
       style={{
+        backgroundColor: "white",
+        borderRadius: 10,
+        marginBottom: 20,
+        margin: 10,
+      }}
+    >
+    <View
+      style={{
         width: "100%",
         height: 250,
         marginBottom: 20,
@@ -64,6 +72,7 @@ const Item = ({ item }) => {
        />
        <Text>by andrew</Text>
       </View>
+      </View>
     </View>
   );
 };
@@ -71,14 +80,7 @@ const Item = ({ item }) => {
 export const Blogs = () => {
   return (
     <SafeAreaView style={{ backgroundColor: "#191970", height: "100vh" }}>
-    <View
-      style={{
-        backgroundColor: "white",
-        borderRadius: 10,
-        marginBottom: 20,
-        margin: 10,
-      }}
-    >
+    
  
     <FlatList
         style={{ marginBottom: 20 }}
@@ -89,7 +91,7 @@ export const Blogs = () => {
       />
  
      
-    </View>
+   
   </SafeAreaView>
   )
 }

@@ -1,27 +1,27 @@
 import React from "react";
-import { View, Text, SafeAreaView } from "react-native";
-import intro from "../assets/Digita Global Service Reel.mp4";
+import { View, Text, SafeAreaView,StyleSheet,Platform } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
+
+
 
 export const HomeScreen = () => {
   return (
     <SafeAreaView style={{ backgroundColor: "#191970", height: "100vh" }}>
-      <View
-        style={{
-          backgroundColor: "white",
-          borderRadius: 10,
-          marginBottom: 20,
-          margin: 10,
-        }}
-      >
-        <View
-          style={{
-            width: "100%",
-            height: 250,
-          }}
-        >
-          <Text>Home Screen</Text>
-        </View>
-      </View>
+      
+       <View>
+        <Text>Home</Text>
+       </View>
     </SafeAreaView>
   );
 };
+
+
+const styles = StyleSheet.create({
+  backgroundVideo: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+  },
+});
